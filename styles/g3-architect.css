@@ -245,7 +245,7 @@ footer p {
 
     .sponsor-icons {
         flex-direction: column;
-        gap: 4rem;
+        gap: 2rem;
     }
 
     .sponsor-icons img {
@@ -287,7 +287,7 @@ footer p {
     }
 
     .sponsor-icons {
-        gap: 4rem;
+        gap: 2rem;
     }
 
 }
