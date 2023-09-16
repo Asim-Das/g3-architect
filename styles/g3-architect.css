@@ -253,7 +253,7 @@ footer p {
     }
 
     footer {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 }
@@ -278,6 +278,11 @@ footer p {
 
     .features {
         flex-direction: column;
+    }
+
+    .features img {
+        height: 100%;
+        width: 100%;
     }
 
     .awards-facts {
