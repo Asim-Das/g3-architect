@@ -171,6 +171,10 @@ main {
     margin-top: 5rem;
 }
 
+.sponsor-icons img {
+    filter: grayscale(100%);
+}
+
 .sponsor-content {
     text-align: center;
 }
