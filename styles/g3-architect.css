@@ -76,6 +76,7 @@ main {
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .team-img-container {
@@ -105,7 +106,91 @@ main {
     font-weight: 400;
 }
 
+/* some features area's styles */
+.features {
+    display: flex;
+    gap: 2rem;
+}
 
+.features-content-title {
+    border-left: 3px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-content-item {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    margin: 1.8rem 1rem;
+}
+
+.item-title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.item-description {
+    color: #727272;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.features img {
+    height: 90%;
+}
+
+.btn-experience {
+    padding: 1.5rem 4rem;
+    border-radius: 8px;
+    background: #FF900E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFF;
+    border: 0;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+}
+
+/* Facts area's styles */
+.awards-facts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fact-issue {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 3rem;
+    text-align: center;
+}
+
+.sponsors {
+    margin-top: 5rem;
+}
+
+.sponsor-content {
+    text-align: center;
+}
+
+.sponsor-icons {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 2rem 0;
+    margin: 5rem;
+}
+
+footer p {
+    text-align: center;
+}
 
 
 /* Responsive with media-query */
@@ -131,16 +216,53 @@ main {
 
     .team-img-container {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: 2rem;
+    }
+
+
+    .some-facts {
+        padding: 0 2rem;
+    }
+
+    .awards-facts {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .features {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .features img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .sponsor-icons {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .sponsor-icons img {
+        width: 100%;
+    }
+
+    footer {
+        width: 90%;
+        margin: 0 auto;
     }
 }
+
+/* Medium Devices responsive with media query */
 
 @media screen and (min-width:576px) and (max-width:996px) {
     header {
         padding: 20px;
     }
 
-    nav {
+    nav,
+    .sponsor-icons {
         flex-direction: column;
     }
 
@@ -149,4 +271,19 @@ main {
         flex-direction: column-reverse;
         margin: 0 1rem;
     }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .awards-facts {
+        flex-direction: column;
+        margin: 0 2rem;
+        gap: 2rem;
+    }
+
+    .sponsor-icons {
+        gap: 4rem;
+    }
+
 }
